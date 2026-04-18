@@ -1,151 +1,139 @@
-# Headless Markdown
+# Turn real-world input into sellable pages automatically
 
-**Headless Markdown** is a perception-first logging system.
+**5-second value prop:** Capture text from the real world and publish a sales page in minutes.
 
-It watches the world quietly,  
-and writes Markdown **only when the world becomes still**.
-
-No UI.  
-No AI.  
-No continuous narration.
-
-Just perception → stability → memory.
+Headless Markdown LP Engine turns camera/screen OCR into a monetizable HTML landing page with a clear sales story.
 
 ---
 
-## What this is
+## What you get
 
-Headless Markdown turns a webcam into a **headless observer**.
-
-- Detects visual change (classical CV, no AI)
-- Waits until the scene becomes stable
-- Runs OCR **only at that moment**
-- Appends the result to a Markdown file
-
-The output is not a log file.  
-It is **a readable, structured memory of events**.
+- Real-world text capture (OCR pipeline)
+- Raw Markdown memory log
+- AI transformation into sales structure
+- HTML landing page output
+- Monetization-ready CTA block
 
 ---
 
-## Why Markdown?
+## System Architecture
 
-Markdown is the perfect intermediate representation.
+```text
+Input (Camera / Screen / Notes)
+→ OCR
+→ Raw Markdown
+→ AI Transform (Problem → Insight → Solution → CTA)
+→ Headless Markdown Rendering
+→ HTML Landing Page
+→ Sale
+```
 
-- Human-readable
-- Agent-readable
-- Diff-friendly
-- Git-friendly
-- Obsidian-friendly
+Short form:
 
-Headless Markdown does not render anything.  
-It only **writes memory**.
-
----
-
-## Core idea
-
-> Do not understand the world continuously.  
-> Record the world **only when it stops moving**.
-> Camera
-↓
-Frame diff (OpenCV)
-↓
-Change detected
-↓
-Wait for stability
-↓
-OCR (optional, minimal)
-↓
-Append to Markdown
-
+```text
+Input → OCR → Markdown → AI → LP → Sale
+```
 
 ---
 
-## Usage
+## 24-hour flow (from capture to sell)
 
-### Requirements
+1. Capture real-world text with OCR.
+2. Save to `capture.md` (raw markdown).
+3. Run `python main.py`.
+4. Get:
+   - `output/sellable.md`
+   - `output/landing_page.html`
+5. Publish page and add payment link.
 
-- Python 3.10+
-- OpenCV
-- Tesseract OCR (optional but recommended)
+---
+
+## Quick Start
 
 ```bash
-pip install -r requirements.txt
+python main.py
+```
 
-Run
-python rmd.py
+Default input: `examples/capture_sample.md`
 
-
-The script will create / append to:
-
-capture.md
-
-
-Only when:
-
-a significant visual change occurs
-
-the scene becomes stable
-
-Example output
----
-### 2026-01-19 22:10:50
-_stable_after_motion_
-
-ERROR
-DEVICE NOT READY
-
-Design principles
-
-No continuous OCR
-
-No real-time narration
-
-OCR is an exception, not the default
-
-Failure of OCR must never stop the system
-
-Silence is a valid state
-
-What this is NOT
-
-Not a monitoring dashboard
-
-Not a surveillance system
-
-Not a Vision AI demo
-
-Not real-time transcription
-
-This is perception logging, not interpretation.
-
-Possible extensions
-
-Keyword-triggered OCR
-
-Region-limited OCR
-
-Daily Markdown rotation
-
-Agent that reads the Markdown
-
-Multi-sensor input (audio, GPIO, etc.)
-
-Philosophy
-
-Headless Markdown treats perception as a background process.
-
-The screen is optional.
-Understanding is optional.
-Memory is not.
-
-License
-
-MIT
-
-This dramatically reduces noise and preserves meaning.
+Outputs:
+- `output/sellable.md`
+- `output/landing_page.html`
 
 ---
 
-## How it works
+## Working Example
 
+### Input (raw OCR markdown)
+
+```md
+ERROR DEVICE NOT READY.
+Users cannot complete setup and abandon onboarding.
+Support tickets are increasing every day.
+```
+
+### Output (sellable markdown)
+
+```md
+## Problem
+Users hit setup errors and quit before activation.
+
+## Insight
+The friction happens at first run, so confidence breaks before value is seen.
+
+## Solution
+Ship a guided setup fix package with a fast diagnostic checklist and auto-recovery steps.
+
+## CTA
+Get the Setup Recovery Pack now: https://buymeacoffee.com/yourname
+```
+
+---
+
+## Monetization
+
+Use captured text as commercial input:
+
+1. **Capture ideas → sell reports**  
+   Convert whiteboard or notebook captures into paid strategy briefs.
+
+2. **Capture screens → sell optimizations**  
+   Turn UI error states and workflow friction into paid CRO/UX recommendations.
+
+3. **Capture notes → sell insights**  
+   Transform team notes into packaged insight docs or mini playbooks.
+
+Payment options:
+- BuyMeACoffee
+- Gumroad
+- Stripe payment link
+
+---
+
+## Template
+
+Sales template is included at:
+
+- `templates/sales_page.md`
+
+Structure:
+- headline
+- problem
+- solution
+- CTA
+
+---
+
+## Try it now
+
+- Clone and run
+- Generate your first sales page
+- Publish and sell the output
+
+```bash
+git clone https://github.com/KG-NINJA/headless-markdown.git
+cd headless-markdown
+python main.py
+```
+
+If you want instant monetization, replace the CTA link with your own BuyMeACoffee page and ship today.
