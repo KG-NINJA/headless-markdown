@@ -124,6 +124,27 @@ Structure:
 
 ---
 
+## High-Value Input Example
+
+### Sample (`examples/high_value_input.md`)
+
+```md
+Checkout drop-off call notes:
+Freelance course creators are refunding 8-12 sales every week because buyers get stuck after payment and never receive login details.
+Each support thread takes about 18 minutes, and most creators handle 25+ tickets per week just for "Where is my access?".
+At a $49 average order value, that's roughly $392-$588 in weekly lost revenue before ad costs.
+Two creators said they paused paid ads because onboarding complaints hurt their review scores.
+Current process is copy-paste replies from Gmail, no automation, no clear first-login instructions.
+```
+
+### Why it sells
+
+- Targets a specific buyer persona: freelance course creators.
+- Shows measurable pain (refund count, ticket volume, minutes lost, weekly revenue loss).
+- Creates a clear paid-solution angle: automated post-purchase onboarding and access delivery fixes.
+
+---
+
 ## Try it now
 
 - Clone and run
